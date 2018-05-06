@@ -1,0 +1,56 @@
+
+.dragContainer {
+  position:relative;
+  .item {
+    position:relative;
+    width:100%;
+    height: 240px;
+    background: #fff;
+  }
+  #grid {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+  }
+}
+
+
+.container-chart {
+  height:100%;
+  overflow-y: auto;
+    li {
+      display: inline-block;
+    vertical-align: top;
+    margin: 20px 18px;
+    text-align: center;
+    width: 120px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    input {
+      display:none;
+    }
+    .checked h5::before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-size: 15px 15px;
+      background-image: url(http://echarts.baidu.com/images/builder/checked.png);
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: -105px;
+    }
+      img {
+
+        margin-top: 5px;
+        width: 90px;
+        height: 90px;
+        padding: 5px 10px;
+      }
+    }
+}
